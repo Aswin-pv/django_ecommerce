@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     #CUSTOM APPS
 
     'core',
+    'userauths',
 ]
 
 MIDDLEWARE = [
@@ -145,3 +146,4 @@ JAZZMIN_SETTINGS = {
     'site_brand' : "SuperKart",
     'copyright' : "Superkart",
 }
+
