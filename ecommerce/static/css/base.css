@@ -2,13 +2,96 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+}
+body{
     font-family: 'oswald',sans-serif;
+}
+
+/* TOP-HEADER */
+
+.header-top{
+    background-color: #B6FFFA;
+    padding: 5px 0;
+    font-size: 0.9rem;
+
+}
+.header-top .top-left{
+    display: flex;
+    margin:0px;
+    align-items: center;
+    height: 100%;
 }
 
 .header-top a .phone-icon{
     color: black;
+    height: 20px;
+    margin-right:4px ;
 }
 .header-top a {
     text-decoration: none;
     color: black;
+    margin: 0 10px;
+}
+
+.header-top .top-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* HEADER NAVBAR */
+
+.headernav{
+    background-color: #98E4FF;
+    padding: 20px 0;
+}
+
+.headernav .search-form{
+    width: 50%;
+}
+
+.headernav .right-side{
+    margin-left: 3rem;
+}
+
+.headernav li.nav-item .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.headernav .navbar-brand span{
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: #100a0a;
+  text-shadow:
+    0 0 5px #fdfefe,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+ 
+}
+
+.right-side a{
+    display: inline-block;
+    color: #000;
+    margin: 0 10px;
+    font-size: 2rem;
+}  
+
+
+.footer{
+    background-color:#B6FFFA ;
+    padding: 10px 0;
+    color: grey;
+}
+
+.footer .footer-right{
+    display: flex;
+    justify-content: flex-end;
 }
