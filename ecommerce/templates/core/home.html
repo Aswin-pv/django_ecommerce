@@ -1,4 +1,11 @@
-{% extends 'core/base.html' %} {% block content %}
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block custom_styles %}
+    <link rel="stylesheet"  href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block content %}
 
 <!-- BANNER-SECTION -->
 
@@ -36,6 +43,81 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    {% endblock %}
 </div>
+
+
+<section class="services py-3 ">
+    <div class="container">
+        <div class="row">
+            <div class="delivery py-2 rounded" >
+                <div class="delivery-image">
+                    <img src="static/images/icons8-delivery.gif" alt="">
+                </div>
+                <div class="delivery-content">
+                    <h5>Free Home Delivery</h5>
+                    <p>for orders above ₹ 500</p>
+                </div>
+        </div> 
+        </div>
+        
+    </div>
+</section>
+
+
+<section div="all-products ">
+    <div class="container">
+        <h1 class="products-head py-4">All Products</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card text-center border-2">
+                    <div class="card-body">
+                        <img src="https://www.vickysports.com/products/2022/846/t20_1.jpg" class="card-img-top" alt="">
+                        <h2 class="card-title">Adidas</h2>
+                        <p class="card-text">this is a sample card</p>
+                        <span class="text-danger">Rs 10000</span>
+                    </div>
+                    <button class="btn btn-info">Buy Now</button>
+                    <button class="btn btn-secondary mt-2">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card text-center border-2">
+                    <div class="card-body">
+                        <img src="https://www.vickysports.com/products/2022/846/t20_1.jpg" class="card-img-top" alt="">
+                        <h2 class="card-title">Adidas</h2>
+                        <p class="card-text">this is a sample card</p>
+                        <span class="text-danger">Rs 10000</span>
+                    </div>
+                    <button class="btn btn-info">Buy Now</button>
+                    <button class="btn btn-secondary mt-2">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card text-center border-2">
+                    <div class="card-body">
+                        <img src="https://www.vickysports.com/products/2022/846/t20_1.jpg" class="card-img-top" alt="">
+                        <h2 class="card-title">Adidas</h2>
+                        <p class="card-text">this is a sample card</p>
+                        <span class="text-danger">Rs 10000</span>
+                    </div>
+                    <button class="btn btn-info">Buy Now</button>
+                    <button class="btn btn-secondary mt-2">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+                <div class="card text-center border-2">
+                    <div class="card-body">
+                        <img src="https://www.vickysports.com/products/2022/846/t20_1.jpg" class="card-img-top" alt="">
+                        <h2 class="card-title">Adidas</h2>
+                        <p class="card-text">this is a sample card</p>
+                        <span class="text-danger">Rs 10000</span>
+                    </div>
+                    <button class="btn btn-info">Buy Now</button>
+                    <button class="btn btn-secondary mt-2">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

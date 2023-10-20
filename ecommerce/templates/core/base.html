@@ -13,7 +13,10 @@
             crossorigin="anonymous"
         />
         <!--STYLESHEET-->
+        {% block custom_styles %}
+        {% endblock %}
         <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+        
         <!--GOOGLE FONTAPI-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -121,7 +124,7 @@
         
           {% block content %}
 
-          
+
 
           {% endblock %}
           

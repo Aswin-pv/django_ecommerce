@@ -1,0 +1,30 @@
+/* HOMEPAGE BANNER */
+
+.carousel .carousel-item {
+    max-width: 100%;
+    height: auto;
+}
+
+/* SERVICE SECTION */
+
+.services{
+    background-color: #B6FFFA;
+}
+
+
+.services .delivery{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    
+}
+
+/* PRODUCTS SECTION */
+
+.card{
+   
+    width: 200px;
+    height: auto;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
