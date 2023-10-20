@@ -121,6 +121,10 @@ body{
     background-color: #B6FFFA;
 }
 
+/* HOMEPAGE BANNER */
+.carousel .carousel-item {
+    height: 500px;
+}
 
 @media (max-width:990px){
    
