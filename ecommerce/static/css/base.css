@@ -13,38 +13,39 @@ body{
     background-color: #B6FFFA;
     padding: 5px 0;
     font-size: 0.9rem;
-
 }
-.header-top .top-left{
+.header-top .top-head{
+    width: 100%;
     display: flex;
-    margin:0px;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
-.header-top a .phone-icon{
-    color: black;
-    height: 20px;
-    margin-right:4px ;
+.header-top .top-head .top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header-top a {
+.header-top .top-head .top-left a{
     text-decoration: none;
-    color: black;
-    margin: 0 10px;
+    color: #000;
 }
-
-.header-top .top-right{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
+.header-top .top-head .top-right 
+.login-top a{
+    text-decoration: none;
+    color: #000;
+}
+.header-top .top-head .top-right 
+.contact-icon a{
+    
+    color: #000;
 }
 
 /* HEADER NAVBAR */
 
 .headernav{
     background-color: #98E4FF;
-    padding: 20px 0;
+    padding: 12px 0;
 }
 
 .headernav .search-form{
@@ -86,12 +87,41 @@ body{
 
 
 .footer{
+    display: flex;
+    justify-content: center;
     background-color:#B6FFFA ;
     padding: 10px 0;
     color: grey;
 }
+.footer h6{
+    font-size: .7rem;
+}
 
-.footer .footer-right{
+
+
+/* HEADER SEARCH BAR */
+
+.search-container{
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    right: 8px;
+  }
+
+  /* RESPONSIVE NAVBAR */
+
+.search-navbar{
+    background-color: #B6FFFA;
+}
+
+
+@media (max-width:990px){
+   
 }
