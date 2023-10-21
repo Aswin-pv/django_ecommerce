@@ -16,3 +16,9 @@ def store(request, category_slug = None):
         product_count = products.count()
 
     return render(request, 'store/store.html', context={'products' : products,'product_count': product_count})
+
+
+def product_detail(request, category_slug, product_slug):
+
+    products = Product.objects.all()
+    return render(request, 'store/product_details.html',context={'products' : products })

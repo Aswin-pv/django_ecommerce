@@ -17,3 +17,18 @@
     font-weight: 600;
     font-size: 1.5rem;
 }
+
+/* CATEGORY ACCORDIAN */
+
+.store .acc-category{
+    list-style-type: none;
+}
+
+.store .acc-category li a{
+    text-decoration: none;
+    color: var(--pure-black);
+
+}
+.store .acc-category li{
+    margin: 5px 0;
+}

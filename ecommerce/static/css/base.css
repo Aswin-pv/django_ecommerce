@@ -2,15 +2,28 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
+:root{
+    --bg-color:#F7F7F7;
+    --primary-color:#98E4FF;
+    --secondary-color:#B6FFFA;
+    --grey-color:grey;
+    --pure-black:#000;
+    --pure-white:#fff;
+    --light-grey:rgb(229, 221, 221);
+}
+
 body{
     font-family: 'oswald',sans-serif;
+    background-color: var(--bg-color);
 }
+
 
 /* TOP-HEADER */
 
 .header-top{
-    background-color: #B6FFFA;
+    background-color: var(--secondary-color);
     padding: 5px 0;
     font-size: 0.9rem;
 }
@@ -28,23 +41,23 @@ body{
 }
 .header-top .top-head .top-left a{
     text-decoration: none;
-    color: #000;
+    color: var(--pure-black);
 }
 .header-top .top-head .top-right 
 .login-top a{
     text-decoration: none;
-    color: #000;
+    color: var(--pure-black);
 }
 .header-top .top-head .top-right 
 .contact-icon a{
     
-    color: #000;
+    color: var(--pure-black);
 }
 
 /* HEADER NAVBAR */
 
 .headernav{
-    background-color: #98E4FF;
+    background-color: var(--primary-color);
     padding: 12px 0;
 }
 
@@ -65,7 +78,7 @@ body{
 .headernav .navbar-brand span{
     font-weight: 800;
     font-size: 1.9rem;
-    color: #100a0a;
+    color: var(--pure-black);
   text-shadow:
     0 0 5px #fdfefe,
     0 0 10px #fff,
@@ -80,7 +93,7 @@ body{
 
 .right-side a{
     display: inline-block;
-    color: #000;
+    color: var(--pure-black);
     margin: 0 10px;
     font-size: 2rem;
 }  
@@ -89,9 +102,9 @@ body{
 .footer{
     display: flex;
     justify-content: center;
-    background-color:#B6FFFA ;
+    background-color:var(--secondary-color) ;
     padding: 10px 0;
-    color: grey;
+    color: var(--grey-color);
 }
 .footer h6{
     font-size: .7rem;
@@ -118,7 +131,7 @@ body{
   /* RESPONSIVE NAVBAR */
 
 .search-navbar{
-    background-color: #B6FFFA;
+    background-color: var(--secondary-color);
 }
 
 

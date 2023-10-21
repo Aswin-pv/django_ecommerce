@@ -25,12 +25,10 @@
                       <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <ul class="acc-category">
-                                <li><a href="">Cricket</a></li>
-                                <li><a href="">Football</a></li>
-                                <li><a href="">Volleyball</a></li>
-                                <li><a href="">Badminton</a></li>
-                                <li><a href="">Boxing</a></li>
-                                <li><a href="">Basketball</a></li>
+                              <li><a href="{% url 'store' %}">All Products</a></li>
+                              {% for category in links %}
+                                <li><a href="{{ category.get_url }}">{{ category.category_name}}</a></li>
+                              {% endfor %}
                             </ul>
                         </div>
                       </div>

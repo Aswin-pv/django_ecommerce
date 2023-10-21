@@ -1,0 +1,67 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block custom_styles %}
+    <link rel="stylesheet"  href="{% static 'css/product_details.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- PRODUCT SECTION -->
+    <section class="product-section">
+        <div class="container my-5 pt-5 d-flex justify-content-center align-items-center">
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img class="img-fluid w-100" src="\static\images\apple.jpg" alt="">
+                </div>
+                <div class="col-lg-5 col-md-12 col-12">
+                    <div class="product-data">
+                            <h2 class="my-3">Realme narzo 123</h2>
+                        <h4 class="my-3 text-danger">Rs 10000</h4>
+                        <h5 class="my-3">Remaining stocks : 12</h5>
+                        <h6 class="my-3">qty</h6>
+                        <div class="quantity d-flex align-items-center my-3">
+                            <button onclick="decreaseQty()" class="btn  me-3 quantity-btn">-</button>
+                            <h6 id="stock-qty">0</h6>
+                            <button onclick="increaseQty()" class="btn  ms-3 quantity-btn">+</button>
+                        </div>
+                        <button class="btn btn-info my-3">Add to cart <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                          </svg></button>
+                        <div class="d-box">
+                            <div class="d-head d-flex align-items-center">
+                                <h6 class="pe-4">View Product Details</h6>
+                                <button class="d-btn" onclick="description()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                    <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                  </svg></button>
+                            </div>
+                            <p class="d-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quisquam, sapiente esse consequatur quam quod autem quibusdam laudantium sit sunt, cupiditate odio aut commodi vero veritatis vitae doloremque numquam ducimus deleniti alias. Repudiandae dolores ducimus recusandae modi voluptatibus nemo numquam distinctio consequuntur debitis maxime corrupti ipsa eum velit, magnam aliquam laborum enim veritatis pariatur provident atque optio sequi nihil. Ut, optio! Deleniti ullam dolorem, facilis neque odit ipsum aliquam incidunt expedita ab non quas aspernatur. Molestiae repellendus, fugit rem optio soluta asperiores, incidunt doloremque earum rerum iusto sit expedita tempora saepe harum nihil eveniet pariatur. Ab quidem blanditiis a earum!</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEW SECTION -->
+    <section class="review pb-4">
+        <div class="container">
+            <h3 class="pb-4">Customer Reviews</h3>
+            <div class="customer-review">
+                <div class="customer-profile d-flex justify-content-between">
+                    <h6>Aswin</h6>
+                    <span>24-06-2020</span>
+                </div>
+                <div class="customer-comments">
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi error vero a dolor hic sequi ea suscipit molestias impedit quod explicabo accusantium similique odit accusamus at, aspernatur asperiores labore pariatur sapiente exercitationem placeat officiis expedita esse? Deleniti labore magni, dignissimos cumque culpa ad aperiam, vitae illum adipisci molestiae dolorum fugiat perspiciatis quisquam iste atque molestias explicabo officiis similique! Itaque enim voluptate a accusantium, cum molestias esse sint corporis deserunt officiis pariatur placeat beatae deleniti. Inventore, dignissimos alias! Sed veritatis modi eligendi dolores amet, sapiente, quo iure consequatur porro dicta inventore reiciendis id expedita totam. Possimus dolorum aut odit. Provident, reprehenderit.</P>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% block javascript %}
+<script src="{% static 'js/product_details.js' %}"></script>
+{% endblock %}    
+{% endblock %}

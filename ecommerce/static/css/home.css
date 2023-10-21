@@ -8,13 +8,13 @@
 /* SERVICE SECTION */
 
 .services{
-    background-color: #B6FFFA;
+    background-color: var(--secondary-color);
 }
 
 
 .services .delivery-section{
     width: 100%;
-    background-color: #fff;
+    background-color: var(--pure-white);
     display: flex;
     justify-content: space-around;
 }
