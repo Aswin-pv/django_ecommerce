@@ -73,12 +73,10 @@
                       Category
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Cricket</a></li>
-                      <li><a class="dropdown-item" href="#">Football</a></li>
-                      <li><a class="dropdown-item" href="#">Volleyball</a></li>
-                      <li><a class="dropdown-item" href="#">Boxing</a></li>
-                      <li><a class="dropdown-item" href="#">Basketball</a></li>
-                      <li><a class="dropdown-item" href="#">Badminton</a></li>
+                      {% for category in links %}
+                        <li><a class="dropdown-item" href="{{ category.get_url }}">{{category.category_name}}</a></li>
+                      {% endfor %}
+                      
                     </ul>
                   </li>
                   
