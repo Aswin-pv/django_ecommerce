@@ -1,0 +1,37 @@
+/* PRODUCT_sECTION */
+
+
+.product-section .d-box .d-head .d-btn{
+    padding:3px 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.product-section .container{
+    background-color: var(--pure-white);
+
+}
+
+.d-details {
+    display: none;
+    margin-top: 5px;
+    background-color: var(--light-grey);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.quantity-btn{
+    font-weight: bold;
+    background-color: var(--grey-color);
+}
+.quantity-btn:hover{
+    background-color: rgb(177, 170, 170);
+}
+
+/* REVIEW SECTION */
+
+.review .customer-review{
+    outline: 1px solid var(--light-grey);
+    padding: 20px;
+    background-color: var(--pure-white);
+}

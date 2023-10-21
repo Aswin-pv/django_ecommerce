@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+:root{
+    --bg-color:#F7F7F7;
+    --primary-color:#98E4FF;
+    --secondary-color:#B6FFFA;
+    --grey-color:grey;
+    --pure-black:#000;
+    --pure-white:#fff;
+    --light-grey:rgb(229, 221, 221);
+}
+
+body{
+    font-family: 'oswald',sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+/* TOP-HEADER */
+
+.header-top{
+    background-color: var(--secondary-color);
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+.header-top .top-head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top .top-head .top-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .top-head .top-left a{
+    text-decoration: none;
+    color: var(--pure-black);
+}
+.header-top .top-head .top-right 
+.login-top a{
+    text-decoration: none;
+    color: var(--pure-black);
+}
+.header-top .top-head .top-right 
+.contact-icon a{
+    
+    color: var(--pure-black);
+}
+
+/* HEADER NAVBAR */
+
+.headernav{
+    background-color: var(--primary-color);
+    padding: 12px 0;
+}
+
+.headernav .search-form{
+    width: 50%;
+}
+
+.headernav .right-side{
+    margin-left: 3rem;
+}
+
+.headernav li.nav-item .nav-link{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.headernav .navbar-brand span{
+    font-weight: 800;
+    font-size: 1.9rem;
+    color: var(--pure-black);
+  text-shadow:
+    0 0 5px #fdfefe,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+ 
+}
+
+.right-side a{
+    display: inline-block;
+    color: var(--pure-black);
+    margin: 0 10px;
+    font-size: 2rem;
+}  
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color:var(--secondary-color) ;
+    padding: 10px 0;
+    color: var(--grey-color);
+}
+.footer h6{
+    font-size: .7rem;
+}
+
+
+
+/* HEADER SEARCH BAR */
+
+.search-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    right: 8px;
+  }
+
+  /* RESPONSIVE NAVBAR */
+
+.search-navbar{
+    background-color: var(--secondary-color);
+}
+
+
+@media (max-width:990px){
+   
+}

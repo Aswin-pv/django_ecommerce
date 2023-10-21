@@ -1,0 +1,34 @@
+
+/* STORE CARD SECTION */
+
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.truncate-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card .card-body .price{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* CATEGORY ACCORDIAN */
+
+.store .acc-category{
+    list-style-type: none;
+}
+
+.store .acc-category li a{
+    text-decoration: none;
+    color: var(--pure-black);
+
+}
+.store .acc-category li{
+    margin: 5px 0;
+}
